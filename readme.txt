@@ -1,6 +1,6 @@
-=== Storefront Top Bar ===
+=== Storefront Site Logo ===
 Contributors: wooassist
-Tags: logo, custom, customizer, top bar, widgets, storefront
+Tags: logo, custom, customizer, branding, storefront
 Requires at least: 3.0.1
 Tested up to: 4.1
 Stable tag: 4.1

@@ -3,7 +3,7 @@
  * Plugin Name:			Storefront Site Logo
  * Plugin URI:			http://wooassist.com/
  * Description:			Lets you add a logo to your site by adding a Branding tab to the customizer where you can choose between "Title and Tagline" or "Logo image" for the Storefront theme.
- * Version:				1.2.0
+ * Version:				1.1.0
  * Author:				WooThemes
  * Author URI:			http://woothemes.com/
  * Requires at least:	4.0.0
