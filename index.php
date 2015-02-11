@@ -1,2 +1,1 @@
-<?php
-// sleeping...
+<?php // Silence is golden... ?>

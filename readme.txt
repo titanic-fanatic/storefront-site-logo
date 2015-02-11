@@ -1,6 +1,6 @@
-=== Storefront Site Logo ===
+=== Storefront Top Bar ===
 Contributors: wooassist
-Tags: logo, custom, customizer, branding, storefront
+Tags: logo, custom, customizer, top bar, widgets, storefront
 Requires at least: 3.0.1
 Tested up to: 4.1
 Stable tag: 4.1
@@ -65,6 +65,11 @@ The maximum width displayed for the logo is 213 pixels. If your image is bigger 
 
 
 == Changelog ==
+
+= 1.1.0 =
+* added language support
+* updated plugin to use storefront extension boilerplate
+* changed logo wrapper class to match default css
 
 = 1.0.0 =
 * initial release
