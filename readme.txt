@@ -66,6 +66,9 @@ The maximum width displayed for the logo is 213 pixels. If your image is bigger 
 
 == Changelog ==
 
+= 1.1.1 =
+* fixed - logo not auto-linking to homepage
+
 = 1.1.0 =
 * added language support
 * updated plugin to use storefront extension boilerplate

@@ -3,9 +3,9 @@
  * Plugin Name:			Storefront Site Logo
  * Plugin URI:			http://wooassist.com/
  * Description:			Lets you add a logo to your site by adding a Branding tab to the customizer where you can choose between "Title and Tagline" or "Logo image" for the Storefront theme.
- * Version:				1.1.0
- * Author:				WooThemes
- * Author URI:			http://woothemes.com/
+ * Version:				1.1.1
+ * Author:				WooAssist
+ * Author URI:			http://wooassist.com/
  * Requires at least:	4.0.0
  * Tested up to:		4.1.0
  *
@@ -14,7 +14,7 @@
  *
  * @package Storefront_Site_Logo
  * @category Core
- * @author James Koster
+ * @author Wooassist
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -246,35 +246,35 @@ final class Storefront_Site_Logo {
 
 		/**
 		 * Add new section
-		 */ 
-		$wp_customize->add_section( 
+		 */
+		$wp_customize->add_section(
 			'woa_sf_branding' , array(
-			    'title'      => __( 'Branding', 'storefront-top-bar' ),
+			    'title'      => __( 'Branding', 'storefront-site-logo' ),
 			    'priority'   => 30,
 			)
 		);
 
 		/**
 		 * Add new settings
-		 */ 
+		 */
 		$wp_customize->add_setting( 'woa_sf_enable_logo' );
 		$wp_customize->add_setting( 'woa_sf_logo' );
 
 		/**
 		 * Add new controls and assigning the settings and it's section
-		 */ 
+		 */
 		$wp_customize->add_control(
 	        new WP_Customize_Control(
 	            $wp_customize,
 	            'woa_sf_enable_logo_img',
 	            array(
-	                'label'      => __( 'Choose branding style', 'storefront-top-bar' ),
+	                'label'      => __( 'Choose branding style', 'storefront-site-logo' ),
 	                'section'    => 'woa_sf_branding',
 	                'settings'   => 'woa_sf_enable_logo',
 	                'type'		 => 'radio',
 	                'choices'	 => array(
-	                	'title_tagline'		=>	__( 'Title and Tagline', 'storefront-top-bar' ),
-	                	'logo_img'			=>	__( 'Logo image', 'storefront-top-bar' )
+	                	'title_tagline'		=>	__( 'Title and Tagline', 'storefront-site-logo' ),
+	                	'logo_img'			=>	__( 'Logo image', 'storefront-site-logo' )
 	                )
 	            )
 	        )
@@ -285,7 +285,7 @@ final class Storefront_Site_Logo {
 	            $wp_customize,
 	            'woa_sf_logo_img',
 	            array(
-	                'label'      => __( 'Logo Image', 'storefront-top-bar' ),
+	                'label'      => __( 'Logo Image', 'storefront-site-logo' ),
 	                'section'    => 'woa_sf_branding',
 	                'settings'   => 'woa_sf_logo'
 	            )
@@ -314,7 +314,7 @@ final class Storefront_Site_Logo {
 
 		if( ( $check == 'logo_img' ) && $logo ) { ?>
 			<div class="site-logo-anchor">
-				<img src="<?php echo $logo; ?>" style="display:inline-block;">
+				<a href="<?php bloginfo('url'); ?>"><img src="<?php echo $logo; ?>" style="display:inline-block;"></a>
 			</div>
 		<?php
 		}
