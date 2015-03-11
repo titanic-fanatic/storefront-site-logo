@@ -24,7 +24,7 @@ This plugin is built to work only for the [Storefront theme](https://wordpress.o
 5. Select your logo image file or upload a new one.
 6. Once uploaded, the preview screen will automatically reload with your new logo.
 
-**Note:**  
+**Note:**
 The max width displayed for the logo is 213px only. If your image is bigger than this, it will automatically resize it.
 
 
@@ -46,25 +46,28 @@ The max width displayed for the logo is 213px only. If your image is bigger than
 
 == Frequently Asked Questions ==
 
-**Will this plugin work for themes other than Storefront?**  
+**Will this plugin work for themes other than Storefront?**
 Unfortunately, No. This plugin was designed to work for the Storefront theme, utilizing Storefront's action hooks and filters. Activating the plugin while using a different theme will trigger a warning.
 
-**I've activated the plugin, where can I access the settings?**  
+**I've activated the plugin, where can I access the settings?**
 The settings for this plugin can be found in the Customizer page under Appearance. In that page, find the section named "Branding".
 
-**I've already added a logo using Jetpack. Will my logo in Jetpack be removed?**  
+**I've already added a logo using Jetpack. Will my logo in Jetpack be removed?**
 If you've added a logo using jetpack, your logo will still be displayed on the site. If you want to use this plugin instead of jetpack, just upload your logo and make sure to check Logo image as the branding style. The logo you've uploaded on Jetpack will then be ignored to avoid conflict.
 
-**What is the maximum width and height for my logo?**  
+**What is the maximum width and height for my logo?**
 The maximum width displayed for the logo is 213 pixels. If your image is bigger than this, it will automatically resize. Just make sure that the width it is not less than 213 pixels to avoid stretching the image.
 
 
 == Screenshots ==
- 
+
 1. Branding section added on the Customizer page under Appearance.
 
 
 == Changelog ==
+
+= 1.1.2 =
+* fixed - logo source not using https when ssl is enabled
 
 = 1.1.1 =
 * fixed - logo not auto-linking to homepage

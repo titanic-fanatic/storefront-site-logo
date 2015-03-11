@@ -3,7 +3,7 @@
  * Plugin Name:			Storefront Site Logo
  * Plugin URI:			http://wooassist.com/
  * Description:			Lets you add a logo to your site by adding a Branding tab to the customizer where you can choose between "Title and Tagline" or "Logo image" for the Storefront theme.
- * Version:				1.1.1
+ * Version:				1.1.2
  * Author:				WooAssist
  * Author URI:			http://wooassist.com/
  * Requires at least:	4.0.0
@@ -312,7 +312,13 @@ final class Storefront_Site_Logo {
 		$check = get_theme_mod( 'woa_sf_enable_logo', 'title_tagline' );
 		$logo = get_theme_mod( 'woa_sf_logo', null );
 
-		if( ( $check == 'logo_img' ) && $logo ) { ?>
+		if( ( $check == 'logo_img' ) && $logo ) {
+
+			if( is_ssl() ) {
+				$logo = str_replace( 'http://', 'https://', $logo );
+			}
+
+			?>
 			<div class="site-logo-anchor">
 				<a href="<?php bloginfo('url'); ?>"><img src="<?php echo $logo; ?>" style="display:inline-block;"></a>
 			</div>
