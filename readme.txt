@@ -11,6 +11,8 @@ Lets you add a logo to your site by adding a Branding tab to the customizer for 
 
 == Description ==
 
+https://www.youtube.com/watch?v=OdTFR37fgJM
+
 This plugin lets you easily add a custom logo for your website. You can also select if you want to display either *Title and Tagline* or *Logo image*.
 
 This plugin is built to work only for the [Storefront theme](https://wordpress.org/themes/storefront).
